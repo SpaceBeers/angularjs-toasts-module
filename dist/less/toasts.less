@@ -1,0 +1,41 @@
+.toastie-fade() {
+	0% {
+      opacity: 0;
+  }
+  16% {
+      opacity: 1;
+  }
+  84% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+} 
+
+@animation-name: fadeInOut;
+
+.toasts {
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	.toast {
+		display: block;
+	}
+}
+
+.animated {
+  .toasts {
+    .toast {
+      animation: fadeInOut 4s;
+      opacity: 0;
+    }
+  }
+}
+
+@-webkit-keyframes @animation-name { .toastie-fade(); }
+@-moz-keyframes @animation-name { .toastie-fade(); }
+@-ms-keyframes @animation-name { .toastie-fade(); }
+@-o-keyframes @animation-name { .toastie-fade(); }
+@keyframes @animation-name { .toastie-fade(); }
