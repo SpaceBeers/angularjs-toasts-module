@@ -5,28 +5,23 @@
     module.directive("fire", ["toastieService", function(toastieService) {
         var toasts = [{
             type: "info",
-            content: "Oh. Hi. I'm a toast",
-            action: "removed"
+            content: "Oh. Hi. I'm a toast"
         },
         {
             type: "warning",
-            content: "I'm a warning. You're next!",
-            action: "removed"
+            content: "I'm a warning. You're next!"
         },
         {
             type: "error",
-            content: "Derp Derp Error Derp",
-            action: "removed"
+            content: "Derp Derp Error Derp"
         },
         {
             type: "success",
-            content: "Hurrah!",
-            action: "removed"
+            content: "Hurrah!"
         },
         {
             type: "info",
-            content: "Somebody love me",
-            action: "removed"
+            content: "Somebody love me"
         }]
 
         return {
