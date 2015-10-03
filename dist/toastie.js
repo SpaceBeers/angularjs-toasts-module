@@ -23,6 +23,7 @@
         }
 
         // Animation from MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Detecting_CSS_animation_support
+        // Needed for IE9 support even though IE9 support needs to die.
         var animationDetect = function() {
             var animation = false,
                 animationstring = 'animation',
@@ -103,7 +104,7 @@
 
 angular.module('toastie').run(['$templateCache', function($templateCache) {
 
-  $templateCache.put('toasts-template.html', '<div class="toasts">\n    <toast class="toast {{toast.type}}" ng-repeat="toast in toasts track by $index">\n        <span class="content">{{toast.content}}</span>\n        <span class="action">{{toast.action}}</span>\n    </toast>\n</div>');
+  $templateCache.put('toasts-template.html', '<div class="toasts">\n    <toast class="toast {{toast.type}}" ng-repeat="toast in toasts track by $index">\n        <span class="content">{{toast.content}}</span>\n    </toast>\n</div>');
 
 }]);
 

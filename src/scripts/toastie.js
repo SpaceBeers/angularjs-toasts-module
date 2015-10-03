@@ -23,6 +23,7 @@
         }
 
         // Animation from MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Detecting_CSS_animation_support
+        // Needed for IE9 support even though IE9 support needs to die.
         var animationDetect = function() {
             var animation = false,
                 animationstring = 'animation',
