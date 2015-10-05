@@ -22,11 +22,10 @@ describe('Toastie controller', function() {
   		// set up
   		mockToast = {
 				content: 'Toast?',
-				type: 'info',
-				action: 'action'
-			};
-
-			var startingToasts = scope.toasts.length;
+                type: 'info'
+        }
+	    
+        var startingToasts = scope.toasts.length;
 
   		// act
   		rootScope.$emit("toast", mockToast)
@@ -58,8 +57,7 @@ describe('Toastie service', function() {
   		// set up  		
 			mockToast = {
 				content: 'Toast?',
-				type: 'info',
-				action: 'action'
+				type: 'info'
 			}
 
   		// act
