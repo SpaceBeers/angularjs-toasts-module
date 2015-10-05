@@ -8,7 +8,7 @@
 
 ```toast = {
 	content: 'something',
-	tpye: 'info'
+	type: 'info'
 }```
 
 ## How do change / make better / break
